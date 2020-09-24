@@ -7,7 +7,7 @@ function Navigation(props:any) {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            Recap - A microservices demo by Michael Saunby
+            Recap - Private Release
           </Link>
           <button
             className="navbar-toggler"
