@@ -3,7 +3,7 @@ export { uploadBlob, projectName };
 // See https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 async function projectName(): Promise<string> {
-  let response = await fetch('api/projectName');
+  let response = await fetch('/api/ProjectNameFunction');
   if (!response.ok) {
     throw new Error('No project name returned');
   }
@@ -18,7 +18,7 @@ async function uploadBlob(blob: Blob, name: string, exten: string, insights: boo
   if (insights) {
     for_insights = '&insights=-for-insights';
   }
-  let response = await fetch('api/uploadTest?name=' + name + '&exten=' + exten + for_insights,
+  let response = await fetch('/api/UploadFunction?name=' + name + '&exten=' + exten + for_insights,
     { method: 'POST', body: blob });
   return await response.text();
 }
