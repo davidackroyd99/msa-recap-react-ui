@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import {
   enableMicrophone, disableMicrophone, startAudioCapture, stopAudioCapture,
   downloadAudioCapture, pauseAudioCapture, getAudioCaptureBlob
-} from "../audio_capture";
+} from "../recording/audio_capture";
 import {
   startScreenCapture, stopScreenCapture, enableScreenCap, disableScreenCap,
   downloadScreenCapture, pauseScreenCapture, getCaptureBlob
-} from "../capture";
-import { projectName, uploadBlob } from "../azure_upload";
+} from "../recording/capture";
+import { projectName, uploadBlob } from "../recording/azure_upload";
 import { withRouter } from "react-router-dom";
 
 // const logArray = Array(<></>);
